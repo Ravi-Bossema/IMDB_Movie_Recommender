@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pick your movie</title>
+    <h1>PICK YOUR MOVIE</h1>
+    <link href="./KD-css.css" type="text/css"  rel="stylesheet">
+    <script src="./KD-javascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="dropdown">
+      <button onclick="myFunctionGenre()" class="dropbtn">Genres</button>
+      <form id="genres" class="dropdown-content">
+        
+      </form>
+    </div>
+
+
+    <div class="dropdown">
+      <button onclick="myFunctionType()" class="dropbtn">Type</button>
+      <form id="classes" class="dropdown-content">
+        <label class="container">Unusual Mix
+          <input type="checkbox" value="UnusualMix">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Classic
+          <input type="checkbox" value="Classic">
+          <span class="checkmark"></span>
+        </label>
+
+      <label class="container">Chilling with the boys
+        <input type="checkbox" value="ChillingWithTheBoys">
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="container">So bad it's good
+        <input type="checkbox" value="SoBadItsGood">
+        <span class="checkmark"></span>
+      </label>
+	  
+	  <label class="container">Recent
+        <input type="checkbox" value="Recent">
+        <span class="checkmark"></span>
+      </label>
+      </form>
+    </div>
+
+    <button class="tooltip" type="button" onclick="runQuery()">Search Movie
+      <span class="tooltiptext">This might take a few seconds</span>
+    </button>
+
+    <div class= 'Output' id="Output">
+
+    </div>
+  </body>
+</html>
